@@ -1,0 +1,225 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 4.2.2021, 11:17:12
+    Author     : risberg
+*/
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 27.2.2020, 10:42:16
+    Author     : risberg
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media only screen and (max-width: 31.25em) {
+    html {
+      font-size: 20%; } }
+  @media only screen and (min-width: 31.25em) and (max-width: 40.625em) {
+    html {
+      font-size: 30%; } }
+  @media only screen and (min-width: 40.625em) and (max-width: 50em) {
+    html {
+      font-size: 40%; } }
+  @media only screen and (min-width: 50em) and (max-width: 62.5em) {
+    html {
+      font-size: 50%; } }
+  @media only screen and (min-width: 62.5em) and (max-width: 75em) {
+    html {
+      font-size: 62,5%; } }
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  line-height: 1.0; }
+
+pre {
+  display: inline; }
+
+table, th, td {
+  border: 1px solid black; }
+
+/*
+    Created on : 27.2.2020, 11:12:04
+    Author     : risberg
+*/
+.tooltip {
+  position: relative;
+  border-bottom: 1px dotted black; }
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 150px;
+  background-color: khaki;
+  color: black;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -60px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-weight: normal;
+  font-size: small; }
+
+.tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent; }
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+  opacity: 1; }
+
+/*
+    Created on : 28.2.2020, 12:53:40
+    Author     : risberg
+*/
+.header {
+  background-color: #bd5734;
+  font-size: 8rem; }
+
+.html-radio-buttons {
+  margin: 5rem;
+  font-size: 2rem; }
+  .html-radio-buttons__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.react-radio-buttons {
+  margin: 5rem;
+  font-size: 2rem; }
+  .react-radio-buttons__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.html-checkbox {
+  margin: 5rem;
+  font-size: 2rem; }
+  .html-checkbox__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.react-checkbox {
+  margin: 5rem;
+  font-size: 2rem; }
+  .react-checkbox__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.html-menu {
+  margin: 5rem;
+  font-size: 2rem; }
+  .html-menu__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.react-menu {
+  margin: 5rem;
+  font-size: 2rem; }
+  .react-menu__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .react-menu__option {
+    text-decoration: capitalize; }
+
+.html-range {
+  margin: 5rem;
+  font-size: 2rem; }
+  .html-range__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.react-range {
+  margin: 5rem;
+  font-size: 2rem; }
+  .react-range__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .react-range__option {
+    text-decoration: capitalize; }
+
+.html-number-field {
+  margin: 5rem;
+  font-size: 2rem; }
+  .html-number-field__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.react-number-field {
+  margin: 5rem;
+  font-size: 2rem; }
+  .react-number-field__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.react-tooltip {
+  margin: 5rem;
+  font-size: 2rem;
+  width: 20%; }
+  .react-tooltip__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .react-tooltip__text {
+    font-size: 1rem; }
+
+.delay-message {
+  margin: 5rem;
+  font-size: 2rem; }
+  .delay-message__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+
+.react-modal {
+  margin: 4rem;
+  font-size: 2rem;
+  height: 20vh;
+  width: 20%;
+  background-color: rgba(128, 128, 128, 0.8); }
+  .react-modal__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }
+  .react-modal__body {
+    background-color: rgba(0, 128, 0, 0.8);
+    z-index: 9999;
+    opacity: 1;
+    visibility: visible;
+    transition: all .2s; }
+    .react-modal__body__btn-close {
+      font-size: 4rem;
+      background-color: lightGrey;
+      width: 20%;
+      cursor: pointer; }
+  .react-modal__btn-open {
+    margin: 1rem; }
+
+.react-text-field {
+  margin: 5rem;
+  font-size: 2rem; }
+  .react-text-field__title {
+    margin-top: 1rem;
+    margin-bottom: 1rem; }

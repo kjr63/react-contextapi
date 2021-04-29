@@ -1,5 +1,5 @@
 {
-  "name": "fe-components",
+  "name": "react-contexapi",
   "version": "1.0.0",
   "description": "node.js testisovellus",
   "main": "index.js",
@@ -28,6 +28,7 @@
     "babel-loader": "^7.1.5",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "concat": "^1.0.3",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
@@ -44,5 +45,15 @@
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.11.0"
   },
-  "dependencies": {}
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjr63/react-contextapi.git"
+  },
+  "bugs": {
+    "url": "https://github.com/kjr63/react-contextapi/issues"
+  },
+  "homepage": "https://github.com/kjr63/react-contextapi#readme",
+  "dependencies": {
+    "babel-plugin-transform-class-properties": "^6.24.1"
+  }
 }
