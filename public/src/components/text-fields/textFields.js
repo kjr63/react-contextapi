@@ -1,4 +1,5 @@
 import React from 'react';
+import { TextContext } from '../../utils/contexts.js';
 
 class OpenInput extends React.Component{
     constructor(props){
@@ -136,6 +137,11 @@ export default class TextFields extends React.Component {
     render () {
         return (
             <div className="react-text-field">
+				<TextContext.Consumer>
+					{({text1, toggleText}) => (
+						<div><button onClick={toggleText}> toggle text </button></div>
+					)}
+				</TextContext.Consumer>
 				<div className="react-text-field__title">React text fields</div>
                 <OpenInput />
                 <DateInput />
@@ -143,3 +149,4 @@ export default class TextFields extends React.Component {
         );
     }
 }
+//TextFields.contextType = TextContext;
